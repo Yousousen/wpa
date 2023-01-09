@@ -1,2 +1,1 @@
-# wpa
-Workshop Physics and Astronomy
+# Workshop Physics and Astronomy
