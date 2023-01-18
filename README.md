@@ -14,7 +14,7 @@ The lifetimes of stars differ greatly depending on the properties of the two sta
 
 1. **Mass transfer** between the stars at different stages of their evolution and compare their final stages.
 
-Concretely, we can look at mass transfer between a donor `pre-main sequence star` / `main sequence star` / `red giant star` and a accretor `white dwarf` / `neutron star` / `black hole`.
+Concretely, we can look at mass transfer between a donor pre-main sequence star / main sequence star / red giant star and a accretor white dwarf / neutron star / black hole.
 
 Something else that is interesting to look at is
 
