@@ -1,0 +1,101 @@
+&star_job
+
+      show_log_description_at_start = .false.
+      pgstar_flag = .true.
+
+/ ! end of star_job namelist
+
+&eos
+
+/ ! end of eos namelist
+
+
+&kap
+
+      Zbase = 0.02
+
+/ ! end of kap namelist
+
+
+&controls
+
+      ! check for retries as part of test_suite
+      ! you can/should delete this for use outside of test_suite
+         retry_limit = 100
+         max_number_retries = 80
+
+      extra_terminal_output_file = 'log2' 
+      log_directory = 'LOGS2'
+
+
+      profile_interval = 10
+      history_interval = 10
+      terminal_interval = 10
+      write_header_frequency = 10
+      
+      varcontrol_target = 1d-3
+      
+
+/ ! end of controls namelist
+
+
+&pgstar
+   Profile_Panels2_win_flag = .false.
+   TRho_Profile_win_flag = .true.
+   HR_win_flag = .true.
+
+  trho_profile_file_flag = .true.
+  hr_file_flag = .true.
+
+  file_white_on_black_flag = .true. ! white_on_black flags -- true means white foreground color on black background
+  file_device = 'png'            ! png
+  file_extension = 'png'
+
+   pgstar_interval = 10
+
+   Profile_Panels2_win_width = 8
+   Profile_Panels2_title = 'evolve_both_stars: star 2'
+
+   Profile_Panels2_xaxis_name = 'mass'
+   Profile_Panels2_xaxis_reversed = .false.
+   Profile_Panels2_xmin = 0.0
+   Profile_Panels2_xmax = 0.9
+   Profile_Panels2_show_mix_regions_on_xaxis = .false.
+
+   Profile_Panels2_xright = 0.92
+   Profile_Panels2_ytop = 0.92
+
+   num_abundance_line_labels = 5
+   Abundance_legend_max_cnt = 0
+
+   Profile_Panels2_yaxis_name(2) = 'Power'
+   Profile_Panels2_ymin(2) = -10.0
+   Profile_Panels2_ymax(2) = 1.0
+
+   Profile_Panels2_file_dir = 'pgstar_out'
+   Profile_Panels2_file_prefix = 'profile_s2_'
+   Profile_Panels2_file_interval = 10000
+   Profile_Panels2_file_width = -1
+   Profile_Panels2_file_aspect_ratio = -1
+
+
+
+  TRho_Profile_title = 'T RHO star 2'
+  TRho_Profile_win_width = 10
+
+  HR_title = 'HR 2'
+  HR_win_width = 10
+
+  trho_profile_file_dir = 'trho2_png'
+  trho_profile_file_prefix = 'trho2_profile_'
+  trho_profile_file_interval = 10 ! output when mod(model_number,trho_profile_file_interval)==0
+  trho_profile_file_width = -1 ! (inches) negative means use same value as for window
+  trho_Profile_file_aspect_ratio = -1 ! negative means use same value as for window
+     
+  hr_file_dir = 'hr2_png'
+  hr_file_prefix = 'hr2_'
+  hr_file_interval = 10 ! output when mod(model_number,trho_profile_file_interval)==0
+  hr_file_width = -1 ! (inches) negative means use same value as for window
+  hr_file_aspect_ratio = -1 ! negative means use same value as for window
+    
+/ ! end of pgstar namelist
