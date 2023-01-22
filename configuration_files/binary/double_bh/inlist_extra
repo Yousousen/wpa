@@ -1,0 +1,8 @@
+&binary_controls
+m1 = 1.0d0
+m2 = 10.0d0
+initial_period_in_days = 0.5d0
+
+accretor_overflow_terminate = 100.0d0 ! Set this arbitrarily just so that it doesn't crash.
+/ ! end of binary_controls namelist
+
