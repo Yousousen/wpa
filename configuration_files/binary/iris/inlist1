@@ -1,0 +1,58 @@
+&star_job
+
+      show_log_description_at_start = .false.
+      save_model_when_terminate = .true.
+      save_model_filename = 'final1.mod'
+      pgstar_flag = .true.
+
+/ ! end of star_job namelist
+
+
+&eos
+
+/ ! end of eos namelist
+
+
+&kap
+
+      Zbase = 0.02
+
+/ ! end of kap namelist
+
+
+&controls
+
+      extra_terminal_output_file = 'log1' 
+      log_directory = 'LOGS1'
+
+      profile_interval = 50
+      history_interval = 10
+      terminal_interval = 1
+      write_header_frequency = 10
+      
+      varcontrol_target = 1d-3
+
+/ ! end of controls namelist
+
+
+&pgstar
+
+      TRho_Profile_win_flag = .true.
+      show_TRho_Profile_legend = .true.
+      show_TRho_Profile_text_info = .true.
+      TRho_Profile_win_width = 6
+      TRho_Profile_win_aspect_ratio = 0.75
+
+      HR_win_flag = .true.
+
+      History_Track1_win_flag = .true.
+      History_Track1_title = 'm1 vs t'
+      History_Track1_xname = 'age'
+      History_Track1_yname = 'star_1_mass'
+      History_Track1_xaxis_label = 't (years)'
+      History_Track1_yaxis_label = 'M (Msun)'
+      History_Track1_log_xaxis = .false. ! show log10 of abs value
+      History_Track1_log_yaxis = .false. ! show log10 of abs value
+      History_Track1_reverse_xaxis = .false.
+
+/ ! end of pgstar namelist
