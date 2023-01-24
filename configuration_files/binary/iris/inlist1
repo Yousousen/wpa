@@ -38,15 +38,17 @@
 &pgstar
 
       TRho_Profile_win_flag = .true.
+      TRho_Profile_title = 'donor temperature over density'
       show_TRho_Profile_legend = .true.
       show_TRho_Profile_text_info = .true.
       TRho_Profile_win_width = 6
       TRho_Profile_win_aspect_ratio = 0.75
 
       HR_win_flag = .true.
+      HR_title = 'donor HR diagram'
 
       History_Track1_win_flag = .true.
-      History_Track1_title = 'm1 vs t'
+      History_Track1_title = 'donor mass over time'
       History_Track1_xname = 'age'
       History_Track1_yname = 'star_1_mass'
       History_Track1_xaxis_label = 't (years)'

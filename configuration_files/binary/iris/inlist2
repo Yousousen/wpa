@@ -38,15 +38,17 @@
 &pgstar
 
       TRho_Profile_win_flag = .true.
+      TRho_Profile_title = 'accretor temperature over density'
       show_TRho_Profile_legend = .true.
       show_TRho_Profile_text_info = .true.
       TRho_Profile_win_width = 6
       TRho_Profile_win_aspect_ratio = 0.75
 
       HR_win_flag = .true.
+      HR_title = 'accretor HR diagram'
 
       History_Track1_win_flag = .true.
-      History_Track1_title = 'm2 vs t'
+      History_Track1_title = 'accretor mass over time'
       History_Track1_xname = 'age'
       History_Track1_yname = 'star_2_mass'
       History_Track1_xaxis_label = 't (years)'
