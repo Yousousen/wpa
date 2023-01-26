@@ -9,5 +9,3 @@
 [Quickly plot data using a shell script](https://github.com/warrickball/qpmg/)
 
 Above avoids having to find out all the pgstar commands and is very convenient to find out what the star(s) are doing without having to make sense of the terminal output.
-
-hoi
