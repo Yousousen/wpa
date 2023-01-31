@@ -1,0 +1,13 @@
+  ! In both inlists, add
+  
+  trho_profile_file_flag = .true.
+  trho_profile_file_dir = 'trho1_png'
+  trho_profile_file_prefix = 'trho1_profile_'
+
+  hr_file_flag = .true.
+  hr_file_dir = 'hr1_png'
+  hr_file_prefix = 'hr1_'
+
+  Grid1_file_flag = .true.
+  Grid1_file_dir = 'grid1'
+  Grid1_file_prefix = 'grid1_'
