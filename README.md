@@ -9,3 +9,7 @@
 [Quickly plot data using a shell script](https://github.com/warrickball/qpmg/)
 
 Above avoids having to find out all the pgstar commands and is very convenient to find out what the star(s) are doing without having to make sense of the terminal output.
+
+## Presentation
+
+Presentation can be found in the root directory of the repo. Note that there are animations in the presentation, but not many pdf-readers support it. It works in XODO.
